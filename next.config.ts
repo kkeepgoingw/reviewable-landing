@@ -8,7 +8,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: isProd ? "./" : undefined, // 선택 사항: 상대 경로 처리
+  assetPrefix: isProd ? './' : '', // 상대 경로로 설정
+  basePath: '', // 루트 경로일 경우 비워두거나 생략 가능
+  reactStrictMode: true,
 };
 
 export default nextConfig;
