@@ -3,7 +3,7 @@ import { benefitData } from "@/constants/benefitData";
 import BenefitCard from './BenefitCard'
 
 export default function Benefit() {
-  const { activeTab, setActiveTab } = useTab()
+  const { activeTab } = useTab()
   const isAdvertiser = activeTab === 'advertiser'
   const benefits = benefitData[activeTab];
 
