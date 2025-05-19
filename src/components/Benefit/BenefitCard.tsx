@@ -1,6 +1,11 @@
 import Image from 'next/image'
+import type { BenefitItem } from '@/constants/benefitData';
 
-export default function BenefitCard({ item }: { item: any }) {
+type BenefitCardProps = {
+  item: BenefitItem;
+};
+
+export default function BenefitCard({ item }: BenefitCardProps) {
   return (
     // 카드 스타일
     <div

@@ -1,3 +1,11 @@
+export type BenefitItem = {
+  id: string;
+  title: string;
+  description?: string;
+  image: string;
+  highlight?: string;
+};
+
 export const benefitData = {
   advertiser: [
     {
